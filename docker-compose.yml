@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  uw_28_4_2017:
+    image: uw_28_4_2017
+    build:
+      context: .\UW_28_4_2017
+      dockerfile: Dockerfile

@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="UW_28_4_2017.Page3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UW_28_4_2017"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        
+            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <RelativePanel Grid.Row="0">
+            <Button x:ConnectionId='2' x:Name="Btn_Open"
+                    Content="Open"
+                    Height="50"
+                    Width="50"
+                                          ></Button>
+        </RelativePanel>
+        <SplitView x:ConnectionId='1' Grid.Row="1"
+                   x:Name="SplitView_Hamburger"
+                   DisplayMode="CompactOverlay" ></SplitView>
+       <TextBlock Grid.Row="1"
+                  Text="Page3"
+                  FontSize="48"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Center"></TextBlock>
+
+    </Grid>
+</Page>
+
